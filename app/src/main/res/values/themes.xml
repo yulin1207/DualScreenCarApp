@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用基础主题 -->
+    <style name="Theme.DualScreenCar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <!-- 中控屏主题 -->
+    <style name="Theme.CenterConsole" parent="Theme.DualScreenCar">
+        <item name="android:windowBackground">@color/center_console_bg</item>
+        <item name="android:statusBarColor">@color/center_console_bg</item>
+        <item name="android:navigationBarColor">@color/center_console_bg</item>
+    </style>
+
+    <!-- 仪表屏主题 -->
+    <style name="Theme.InstrumentCluster" parent="Theme.DualScreenCar">
+        <item name="android:windowBackground">@color/instrument_cluster_bg</item>
+        <item name="android:statusBarColor">@color/instrument_cluster_bg</item>
+        <item name="android:navigationBarColor">@color/instrument_cluster_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

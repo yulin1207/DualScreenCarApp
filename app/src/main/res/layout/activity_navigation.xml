@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    android:orientation="vertical">
+
+    <!-- 顶部导航栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btn_nav_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/tv_nav_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="导航"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/btn_nav_stop"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_close"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- 导航信息区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- 当前道路 -->
+        <TextView
+            android:id="@+id/tv_current_road"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前: 解放大道"
+            android:textColor="#888888"
+            android:textSize="18sp" />
+
+        <!-- 转向图标 -->
+        <ImageView
+            android:id="@+id/iv_nav_turn_icon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_turn_straight"
+            android:layout_marginTop="32dp" />
+
+        <!-- 转向信息 -->
+        <TextView
+            android:id="@+id/tv_nav_turn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沿当前道路直行"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <!-- 距离 -->
+        <TextView
+            android:id="@+id/tv_nav_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余 500米"
+            android:textColor="#00E5FF"
+            android:textSize="28sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- 预计到达时间 -->
+        <TextView
+            android:id="@+id/tv_nav_eta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预计 15分钟 到达"
+            android:textColor="#888888"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- 下一条道路 -->
+        <TextView
+            android:id="@+id/tv_next_road"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="然后: 进入建设大道"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp" />
+    </LinearLayout>
+
+</LinearLayout>

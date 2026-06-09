@@ -1,0 +1,3 @@
+# ProGuard rules for DualScreenCarApp
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application

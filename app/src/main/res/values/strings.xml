@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">车机多屏异显</string>
+    <string name="navigation">导航</string>
+    <string name="media">媒体</string>
+    <string name="vehicle">车辆</string>
+    <string name="settings">设置</string>
+    <string name="speed_unit">km/h</string>
+    <string name="rpm_unit">rpm</string>
+    <string name="battery_level">电量</string>
+    <string name="temperature">水温</string>
+    <string name="odometer">总里程</string>
+    <string name="trip">小计里程</string>
+</resources>
